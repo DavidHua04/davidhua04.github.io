@@ -1,24 +1,68 @@
+/* General body styles */
 body {
-    font-family: "Times New Roman", Times, serif; /* Set to Times New Roman */
-    background-color: #ffebcd; /* Light beige background */
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f5f5f5; /* Soft, neutral background */
+    color: #333; /* Dark text for better readability */
     margin: 0;
-    padding: 50px;
-}
-
-h1 {
-    color: #0073e6; /* Blue heading */
-    text-align: center;
-    font-size: 48px; /* Larger font size */
-}
-
-p {
-    font-size: 20px;
-    color: #444;
-    max-width: 800px;
-    margin: 40px auto;
-    text-align: center;
-    background-color: #fff;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for the main heading */
+h1 {
+    color: #2c3e50; /* Dark blue-grey heading */
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 18px;
+    color: #666; /* Soft gray text */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Professional-looking container for sections */
+.container {
+    background-color: #fff; /* White background for content */
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 8px; /* Rounded corners */
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Section headings */
+h2 {
+    color: #2980b9; /* Light blue for subheadings */
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* List styles for your skills and project details */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* Light border between list items */
+}
+
+/* Link styles */
+a {
+    color: #2980b9; /* Consistent blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

@@ -1,19 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Times New Roman", Times, serif; /* Set to Times New Roman */
+    background-color: #ffebcd; /* Light beige background */
     margin: 0;
-    padding: 20px;
+    padding: 50px;
 }
 
 h1 {
-    color: #333;
+    color: #0073e6; /* Blue heading */
     text-align: center;
+    font-size: 48px; /* Larger font size */
 }
 
 p {
-    font-size: 18px;
-    color: #666;
-    max-width: 600px;
-    margin: 20px auto;
+    font-size: 20px;
+    color: #444;
+    max-width: 800px;
+    margin: 40px auto;
     text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }

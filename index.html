@@ -3,30 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Hua - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>David Hua - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- This links your external CSS file -->
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Resume Website!</h1>
-        <p>Hello! My name is David Hua, and I am a computer science student from UBC. This is my personal website where I showcase my work, projects, and resume.</p>
-    </div>
 
     <div class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, Java, C++</li>
-            <li>Web Development: HTML, CSS, JavaScript</li>
-            <li>Version Control: Git, GitHub</li>
-        </ul>
+        <!-- Header with image and introduction -->
+        <header>
+            <img src="your-photo.jpg" alt="David Hua">
+            <h1>David Hua</h1>
+            <p>Undergraduate Student in Computer Science & Statistics | University of British Columbia, Vancouver</p>
+            <p>Email: <a href="mailto:huayikai.david@gmail.com">huayikai.david@gmail.com</a> | <a href="Resume_David_Hua.pdf" download>Download CV</a></p>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>I am a computer science student from UBC. My interests include programming, data analysis, and teamwork. I am passionate about developing innovative solutions and learning new technologies.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <h3>University of British Columbia, Vancouver</h3>
+            <p><strong>From August 2024 - Present</strong></p>
+            <p><strong>Program:</strong> B.S. in Computer Science</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Technical Skills:</strong></li>
+                <ul>
+                    <li><strong>Python (Proficient):</strong> Pandas, Scikit-learn, Numpy, Altair, Openai</li>
+                    <li><strong>R (Basic)</strong></li>
+                    <li><strong>Java (Basic)</strong></li>
+                    <li><strong>Racket (Basic)</strong></li>
+                    <li><strong>Version Control:</strong> Git, GitHub</li>
+                    <li><strong>Prompt Engineering:</strong> OpenAI APIs</li>
+                    <li><strong>Docker</strong></li>
+                </ul>
+        
+                <li><strong>Soft Skills:</strong></li>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Task Arrangement</li>
+                    <li>Communication</li>
+                </ul>
+            </ul>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <h3>DSCI 100 Course Project</h3>
+            <p>
+                I worked on a data science project for DSCI 100 where we analyzed data using Python. View the project on GitHub: 
+                <a href="https://github.com/DavidHua04/dsci-100-2024w1-group-python23" target="_blank">GitHub Link</a>
+            </p>
+
+            <h3>ESG Report Information Extraction</h3>
+            <p>
+                A private project where I used OpenAI's API to extract valuable insights from ESG reports. Due to the nature of the project, this cannot be shared publicly.
+            </p>
+        </section>
     </div>
 
-    <div class="container">
-        <h2>Projects</h2>
-        <ul>
-            <li>Personal Website: A resume website using GitHub Pages.</li>
-            <li>Project 2: [Add project details]</li>
-        </ul>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 David Hua. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>

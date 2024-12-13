@@ -1,68 +1,63 @@
-/* General body styles */
 body {
-    font-family: "Times New Roman", Times, serif;
-    background-color: #f5f5f5; /* Soft, neutral background */
-    color: #333; /* Dark text for better readability */
+    font-family: 'Lora', serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
 }
-
-/* Styling for the main heading */
-h1 {
-    color: #2c3e50; /* Dark blue-grey heading */
-    font-size: 36px;
+header {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 50px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
-
-/* Styling for paragraphs */
-p {
-    font-size: 18px;
-    color: #666; /* Soft gray text */
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: justify;
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
-
-/* Professional-looking container for sections */
-.container {
-    background-color: #fff; /* White background for content */
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #333;
+}
+header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #777;
+}
+section {
+    background: #fff;
+    margin: 20px 0;
     padding: 30px;
-    margin: 20px auto;
-    border-radius: 8px; /* Rounded corners */
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Section headings */
 h2 {
-    color: #2980b9; /* Light blue for subheadings */
-    font-size: 28px;
+    color: #333;
+    font-size: 1.8em;
     margin-bottom: 15px;
-    border-bottom: 2px solid #2980b9;
-    padding-bottom: 5px;
-    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
 }
-
-/* List styles for your skills and project details */
-ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0;
-}
-
-li {
-    font-size: 16px;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee; /* Light border between list items */
-}
-
-/* Link styles */
 a {
-    color: #2980b9; /* Consistent blue for links */
+    color: #1a73e8;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
 }

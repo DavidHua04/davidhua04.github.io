@@ -27,7 +27,7 @@ body {
         font-size: 2.5em;
         margin: 10px 0;
         color: #333;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Montserrat', sans-serif;
     }
     header p {
         font-size: 1.2em;
@@ -44,7 +44,7 @@ body {
     h2 {
         color: #333;
         font-size: 2.0em;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 15px;
         border-bottom: 2px solid #ddd;
         padding-bottom: 10px;
@@ -52,7 +52,7 @@ body {
     h3 {
         color: #333; /* Adjust text color */
         font-size: 1.5em; /* Slightly smaller than <h2> */
-        font-family: 'Playfair Display', serif;
+        font-family: 'Montserrat', sans-serif;
         margin-top: 20px; /* Space above the heading */
         margin-bottom: 10px; /* Space below the heading */
         border-bottom: 1px solid #ddd; /* Optional: Add an underline */
@@ -64,7 +64,7 @@ body {
         padding-left: 0;
         line-height: 1.7;
         font-size: 1.0em;
-        font-family: 'Lora', serif;
+        font-family: 'Roboto', sans-serif;
     }
     ul li {
         font-size: 1.0em;
@@ -72,7 +72,7 @@ body {
         padding-left: 20px;
         position: relative;
         line-height: 1.7;
-        font-family: 'Lora', serif;
+        font-family: 'Roboto', sans-serif;
     }
     ul li:before {
         content: "•";

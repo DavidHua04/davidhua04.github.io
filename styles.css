@@ -61,3 +61,9 @@ footer {
     background-color: #333;
     color: #fff;
 }
+/* About section styles */
+.about-text {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}

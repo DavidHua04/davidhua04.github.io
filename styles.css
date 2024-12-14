@@ -49,7 +49,7 @@ body {
     }
     h3 {
         color: #333; /* Adjust text color */
-        font-size: 1.6em; /* Slightly smaller than <h2> */
+        font-size: 1.5em; /* Slightly smaller than <h2> */
         margin-top: 20px; /* Space above the heading */
         margin-bottom: 10px; /* Space below the heading */
         border-bottom: 1px solid #ddd; /* Optional: Add an underline */
@@ -59,15 +59,15 @@ body {
     ul {
         list-style-type: none;
         padding-left: 0;
-        line-height: 1.8;
-        font-size: 1.2em;
+        line-height: 1.7;
+        font-size: 1.1em;
     }
     ul li {
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin: 10px 0;
         padding-left: 20px;
         position: relative;
-        line-height: 1.8;
+        line-height: 1.7;
     }
     ul li:before {
         content: "•";

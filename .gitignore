@@ -1,1 +1,7 @@
 cover_letter*
+*.fls
+*.log
+*.aux
+*.xdv
+*.fdb_latexmk
+*.synctex.gz

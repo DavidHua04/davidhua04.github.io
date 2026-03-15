@@ -156,28 +156,87 @@
     \end{header}
 
     \vspace{5 pt - 0.3 cm}
+        
+    \section{Education}
+    
+    \begin{twocolentry}{August 2024 -- Present}
+        \textbf{University of British Columbia, Vancouver}, B.Sc in Computer Science
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item GPA: 4.33/4.33 (91.5/100)
+            \item Honors: Faculty of Science International Student Scholarship, UBC Dean's Scholar
+            \item Expected Graduation Date: April, 2027
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.25 cm}
+    
+    \begin{twocolentry}{June 2023 -- August 2024}
+        \textbf{Chinese University of Hong Kong, Shenzhen}, B.Eng in Computer Engineering
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item GPA: 3.7/4.0
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
 
     \section{Technical Skills}
     
     \vspace{0.10 cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item \textbf{Programming Languages:} Python (Pandas, Scikit-learn, TensorFlow, PyTorch, NumPy), Java (JavaFX), C, C++, JavaScript/TypeScript, SQL, R
+            \item \textbf{Programming Languages:} Python (Pandas, Scikit-learn, TensorFlow, PyTorch, NumPy), Java, C, C++, JavaScript/TypeScript, SQL, R
             \item \textbf{Testing:} JUnit, unittest, pytest, SuperTest, chai, vitest, playwright
             \item \textbf{Database:} MySQL, Oracle, PostgreSQL
-            \item \textbf{Web Development:} RESTful services, Node.js, Express, React, HTML, CSS, JavaScript/TypeScript
+            \item \textbf{Web Development:} RESTful services, Node.js, Express, React, Tailwind css, HTML, CSS, JavaScript/TypeScript
             \item \textbf{Tools:} Docker, Git, Redis, Kubernotes, GitHub, Basic Linux Environments, CI/CD Pipelines
             \item \textbf{UI/UX Design:} Prototyping (Figma), Interview/Observation/Survey Design, Thematic Analysis, Usability Testing, Heuristic Evaluation
             \item \textbf{AI \& Machine Learning:} Classical ML models (KNN, Ridge, Random Forest, ensemble methods, etc), Recommendation System, Time Series, Model Evaluation \& Deployment
         \end{highlights}
-        
-        % \noindent\textbf{Note on course status:} SQL fundamentals currently being strengthened through coursework.
     \end{onecolentry}
     
     \vspace{0.05 cm}
 
     \section{Technical Experience}
         
+    \vspace{0.20 cm}
+    
+    \begin{twocolentry}{January -- July 2024}
+        \textbf{Undergraduate Research Assistant}, University of British Columbia, Vancouver
+    \end{twocolentry}
+    
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a bilingual (English/Chinese) harmful-word dataset of 2,000+ unique terms 
+            by merging and deduplicating four public toxic-word corpora 
+            and one Chinese offensive-language dataset.
+            \item Developed a \textbf{Python image generation pipeline} that 
+            renders harmful words as ASCII art across 8 fill modes 
+            (block characters, symbols, digits, letters, neutral words, emoji, lorem ipsum, Chinese text) 
+            and 10 resolution scales.
+            \item Evaluated 8 state-of-the-art \textbf{vision-language models} 
+            (GPT-4o-mini, Gemini, Grok, LLaMA, Qwen, etc.) via the \textbf{OpenRouter API} on over \textbf{50,000 image samples}.
+            \item Applied \textbf{logistic regression} for detection-failure threshold estimation 
+            and \textbf{Cochran-Armitage trend tests} for monotonic detection decay across resolution scales.
+            % \item Conducted cross-language analysis using \textbf{chi-square and Fisher's exact tests}, 
+            % and modeled provider-origin effects with \textbf{mixed-effects logistic regression}.
+            \item Demonstrated that semantically neutral fill characters and 
+            reduced resolution systematically evade VLM safety filters, 
+            with detection rates dropping below \textbf{15\%} at scale $r \leq 0.3$ and $r \geq 0.6$ across \textbf{6 of 8 models},
+            exposing a concrete vulnerability in current \textbf{AI content moderation} systems.
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.20 cm}
+
     \begin{twocolentry}{May -- June 2025}
         \textbf{QA Intern}, GHz Technology Ltd., Shanghai
     \end{twocolentry}
@@ -185,10 +244,14 @@
     \vspace{0.10 cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Supported UI design iteration in early stage of internship by adapting layouts based on evolving client requirements using \textbf{Figma}.
-            \item Conducted independent end-to-end testing of a hospital mobile application utilizing \textbf{Agile} methodology.
-            \item Designed and maintained 100+ structured test cases; identified 21 bugs and 4 usability issues, including 4 missed by the internal QA engineer.
-            \item Collaborated with QA Engineers and developers to triage, report, and verify fixes using internal tracking tools.
+            \item Supported UI design iteration in early stage of internship 
+            by adapting layouts based on evolving client requirements using \textbf{Figma}.
+            \item Conducted independent end-to-end testing of a hospital mobile application 
+            utilizing \textbf{Agile} methodology.
+            \item Designed and maintained 100+ structured test cases; 
+            identified 21 bugs and 4 usability issues, including 4 missed by the internal QA engineer.
+            \item Collaborated with QA Engineers and developers to triage, report, 
+            and verify fixes using internal tracking tools.
         \end{highlights}
     \end{onecolentry}
 
@@ -251,7 +314,7 @@
         \begin{highlights}
             \item Built and compared 7 classification models (Logistic Regression, Random Forest, XGBoost, LightGBM, etc.) on 30,000 credit card records to predict default risk; engineered features from 6-month payment history and applied SHAP analysis   to identify repayment delay as the dominant predictor.
             \item Achieved a test ROC-AUC of 0.78 with a tuned LightGBM model selected for best speed-accuracy trade-off via 5-fold cross-validation and RandomizedSearchCV.
-            \item Python (Pandas, NumPy, scikit-learn, LightGBM, XGBoost, SHAP, Matplotlib)
+            \item Tools Used: Python (Pandas, NumPy, scikit-learn, LightGBM, XGBoost, SHAP, Matplotlib)
         \end{highlights}
     \end{onecolentry}
     
@@ -297,36 +360,5 @@
             \item Led cross-departmental initiative to automate IEEE membership fee reimbursements, coordinating between student branch and School of Science and Engineering to increase membership participation.
         \end{highlights}
     \end{onecolentry}
-    
-    \vspace{0.2 cm}
-        
-    \section{Education}
-    
-    \begin{twocolentry}{August 2024 -- Present}
-        \textbf{University of British Columbia, Vancouver}, B.Sc in Computer Science
-    \end{twocolentry}
-
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item GPA: 4.33/4.33 (91.5/100)
-            \item Honors: Faculty of Science International Student Scholarship, UBC Dean's Scholar
-            \item Expected Graduation Date: May, 2027
-        \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.25 cm}
-    
-    \begin{twocolentry}{June 2023 -- August 2024}
-        \textbf{Chinese University of Hong Kong, Shenzhen}, B.Eng in Computer Engineering
-    \end{twocolentry}
-
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item GPA: 3.7/4.0
-        \end{highlights}
-    \end{onecolentry}
-
     
 \end{document}

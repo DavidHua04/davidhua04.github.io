@@ -115,7 +115,7 @@
 \let\hrefWithoutArrow\href
 
 \begin{document}
-    \placefooterimage
+    % \placefooterimage
     
     % Define separator:
     \newcommand{\AND}{\unskip
@@ -287,7 +287,41 @@
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}    
+    \vspace{0.2 cm}
+
+    \begin{twocolentry} {}
+        \textbf{InsightUBC — Course \& Facilities Data Explorer}
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Developed a typed React 18/TypeScript frontend with 4 Recharts visualizations (grade trends, enrollment dual-axis, pass/fail scatter, building capacity), enabling non-technical users to explore patterns across UBC departments and buildings.
+            \item Implemented server-side pagination and lazy-loading of nested section data, reducing initial page payload while maintaining full browsability across thousands of records.
+            \item Collaborated on a full-stack REST API (Node.js/Express + TypeScript) with a custom query DSL supporting filtering (AND/OR/NOT), aggregations (GROUP BY, AVG/SUM/COUNT), and async ZIP dataset ingestion, serving 20+ endpoints.
+            \item Tools: TypeScript, React 18, Node.js, Express, Vite, Recharts, Tailwind CSS, JSZip, Mocha/Chai
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+    
+    \begin{twocolentry}{\href{https://github.com/DavidHua04/CreditCardDefaultPost.github.io}{View on GitHub}}
+        \textbf{Credit Card Default Prediction}
+    \end{twocolentry}
+    
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built and compared 7 classification models (Logistic Regression, Random Forest, XGBoost, LightGBM, etc.) 
+            on 30,000 credit card records to predict default risk.
+            \item Engineered features from 6-month payment history and applied SHAP analysis to identify repayment delay as the dominant predictor.
+            \item Achieved a test ROC-AUC of 0.78 with a tuned LightGBM model selected for best speed-accuracy trade-off via 5-fold cross-validation and RandomizedSearchCV.
+            \item Communicated model findings, SHAP feature-importance insights, and data-quality caveats in a plain-language report 
+            designed for non-technical stakeholders, and deployed it as a static site via \href{https://davidhua04.github.io/CreditCardDefaultPost.github.io/}{\textbf{GitHub Pages}}.
+            \item Tools Used: Python (Pandas, NumPy, scikit-learn, LightGBM, XGBoost, SHAP, Matplotlib)
+        \end{highlights}
+    \end{onecolentry}
+    
+    \vspace{0.2 cm}
 
     \begin{twocolentry}{\href{https://github.com/DavidHua04/UBC-Courses-Visualization}{View on GitHub}}
         \textbf{UBC Course Visual Planner}
@@ -304,23 +338,7 @@
     \end{onecolentry}
 
     \vspace{0.2 cm}
-    
-    \begin{twocolentry}{\href{https://github.com/DavidHua04/CreditCardDefaultPost.github.io}{View on GitHub}}
-        \textbf{Credit Card Default Prediction}
-    \end{twocolentry}
-    
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Built and compared 7 classification models (Logistic Regression, Random Forest, XGBoost, LightGBM, etc.) on 30,000 credit card records to predict default risk; engineered features from 6-month payment history and applied SHAP analysis   to identify repayment delay as the dominant predictor.
-            \item Achieved a test ROC-AUC of 0.78 with a tuned LightGBM model selected for best speed-accuracy trade-off via 5-fold cross-validation and RandomizedSearchCV.
-            \item Communicated model findings, SHAP feature-importance insights, and data-quality caveats in a plain-language report designed for non-technical stakeholders, and deployed it as a static site via GitHub Pages.
-            \item Tools Used: Python (Pandas, NumPy, scikit-learn, LightGBM, XGBoost, SHAP, Matplotlib)
-        \end{highlights}
-    \end{onecolentry}
-    
-    \vspace{0.2 cm}
-    
+
     \begin{twocolentry}{\href{https://github.com/DavidHua04/Minecraft-Player-Engagement-Analysis}{View on GitHub}}
         \textbf{UBC Minecraft Player Engagement Analysis}
     \end{twocolentry}

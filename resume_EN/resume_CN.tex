@@ -1,0 +1,351 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage{calc}
+\usepackage[
+    pdftitle={David Hua's CV},
+    pdfauthor={David Hua},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+\usepackage{graphicx}
+
+% Chinese support:
+\usepackage[UTF8]{ctex}
+
+% Ensure that generated pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+% Section formatting:
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+
+% Custom bullet points:
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+% Custom environments:
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0 cm + 0.00001 cm}{0 cm + 0.00001 cm}
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+% Save original href:
+\let\hrefWithoutArrow\href
+
+\begin{document}
+    % Define separator:
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    % Header:
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont David Hua（华宇铠）
+
+        \vspace{5 pt}
+
+        \normalsize
+        \mbox{加拿大，温哥华}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:huayikai.david@gmail.com}{huayikai.david@gmail.com}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{tel:+01 6047670602}{+01 6047670602}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://davidhua04.github.io/index.html}{davidhua04.github.io}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/david-hua-428809320/}{linkedin.com/in/david-hua-428809320}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://github.com/DavidHua04}{github.com/DavidHua04}}%
+    \end{header}
+
+    \vspace{5 pt - 0.3 cm}
+
+    \section{教育背景}
+
+    \begin{twocolentry}{2024年8月 -- 至今}
+        \textbf{不列颠哥伦比亚大学，温哥华}，计算机科学理学学士
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item GPA：4.33/4.33（91.5/100）
+            \item 荣誉：理学院国际生奖学金、UBC 院长学者
+            \item 预计毕业日期：2027年4月
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.25 cm}
+
+    \begin{twocolentry}{2023年6月 -- 2024年8月}
+        \textbf{香港中文大学（深圳）}，计算机工程工学学士
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item GPA：3.7/4.0
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \section{技术技能}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{编程语言：} Python（Pandas、Scikit-learn、TensorFlow、PyTorch、NumPy）、Java、C、C++、JavaScript/TypeScript、SQL、R
+            \item \textbf{测试：} JUnit、unittest、pytest、SuperTest、chai、vitest、playwright
+            \item \textbf{数据库：} MySQL、Oracle、PostgreSQL
+            \item \textbf{Web 开发：} RESTful 服务、Node.js、Express、React、Tailwind CSS、HTML、CSS、JavaScript/TypeScript
+            \item \textbf{工具：} Docker、Git、Redis、Kubernetes、GitHub、基础 Linux 环境、CI/CD 流水线、Tableau、Postman、\LaTeX
+            \item \textbf{UI/UX 设计：} 原型设计（Figma）、访谈/观察/问卷设计、主题分析、可用性测试、启发式评估
+            \item \textbf{人工智能与机器学习：} 经典机器学习模型（KNN、岭回归、随机森林、集成方法等）、推荐系统、时间序列、模型评估与部署
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.05 cm}
+
+    \section{技术经历}
+
+    \vspace{0.20 cm}
+
+    \begin{twocolentry}{2026年1月 -- 至今}
+        \textbf{本科科研助理}，不列颠哥伦比亚大学，温哥华
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 通过合并和去重四个公开有害词语库及一个中文冒犯性语言数据集，
+            构建了一个包含 2,000+ 个独特词条的中英双语有害词语数据集。
+            \item 开发了一个 \textbf{Python 图像生成流水线}，
+            可在 8 种填充模式和 10 种分辨率尺度下将有害词渲染为 ASCII 艺术图像。
+            \item 通过 \textbf{OpenRouter API} 对 8 个前沿\textbf{视觉语言模型}
+            （GPT-4o-mini、Gemini、Grok、LLaMA、Qwen 等）在超过 \textbf{50,000 张图像样本}上进行评估。
+            \item 应用\textbf{逻辑回归}估计检测失败阈值，
+            并采用 \textbf{Cochran-Armitage 趋势检验}分析跨分辨率尺度的单调检测衰减规律。
+            \item 实验表明，语义中性的填充字符和降低分辨率能系统性地规避 VLM 安全过滤器，
+            在 $r \leq 0.3$ 及 $r \geq 0.6$ 的尺度下，\textbf{6/8 个模型}的检测率降至 \textbf{15\%} 以下，
+            揭示了当前 \textbf{AI 内容审核}系统的具体漏洞。
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.20 cm}
+
+    \begin{twocolentry}{2025年5月 -- 6月}
+        \textbf{质量保证实习生}，吉赫兹科技有限公司，上海
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 实习初期参与 UI 设计迭代，使用 \textbf{Figma} 根据不断变化的客户需求调整界面布局。
+            \item 采用\textbf{敏捷}方法，对一款医院移动应用程序进行独立端到端测试。
+            \item 设计并维护 100+ 条结构化测试用例；
+            发现 21 个缺陷和 4 个可用性问题，其中 4 个为内部 QA 工程师遗漏。
+            \item 与 QA 工程师及开发人员协作，使用内部追踪工具进行缺陷分类、报告和修复验证。
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.20 cm}
+
+    \begin{twocolentry}{2024年1月 -- 7月}
+        \textbf{本科科研助理}，香港中文大学（深圳），深圳
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 开发并实现了一个网络爬虫，自动从企业官网获取 ESG 报告，提升数据采集效率。
+            \item 将 PDF 文档转换为文本，提高了数据准确性和可靠性。
+            \item 使用 OpenAI API 从文本中提取关键信息，优化数据处理工作流程。
+            \item 设计高质量提示词，将幻觉或不准确数据的发生率降低了 4\%，提升了研究成果的可信度。
+        \end{highlights}
+    \end{onecolentry}
+
+    \section{项目经历}
+
+    \begin{twocolentry}{}
+        \textbf{InsightUBC — 课程与设施数据探索平台}
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 使用 \textbf{React 18/TypeScript} 和 \textbf{Tailwind CSS} 开发前端，
+            集成 4 个 \textbf{Recharts} 可视化图表，
+            使非技术用户能够探索 UBC 各院系和楼宇的数据规律。
+            \item 实现服务端分页与嵌套区间数据懒加载，在减少首次加载数据量的同时保持对数千条记录的完整浏览能力。
+            \item 参与全栈 REST API 开发（\textbf{Node.js/Express + TypeScript}），
+            支持自定义查询 DSL，涵盖过滤（AND/OR/NOT）、聚合（GROUP BY、AVG/SUM/COUNT）
+            及异步 ZIP 数据集导入，提供 20+ 个端点。
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{\href{https://github.com/DavidHua04/CreditCardDefaultPost.github.io}{查看 GitHub}}
+        \textbf{信用卡违约预测}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 基于 30,000 条信用卡记录，构建并比较了 7 个分类模型
+            （逻辑回归、随机森林、XGBoost、LightGBM 等）以预测违约风险。
+            \item 从 6 个月还款历史中进行特征工程，并应用 SHAP 分析确定还款延迟为最主要预测因子。
+            \item 以通俗语言撰写报告，呈现模型结论、SHAP 特征重要性洞察及数据质量注意事项，
+            面向非技术利益相关者，并通过 \href{https://davidhua04.github.io/CreditCardDefaultPost.github.io/}{\textbf{GitHub Pages} 部署为静态网站（点击查看）}。
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{\href{https://github.com/DavidHua04/UBC-Courses-Visualization}{查看 GitHub}}
+        \textbf{UBC 课程可视化规划工具}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 通过访谈和出声思考观察进行迭代式用户研究，
+            经多轮 \textbf{Figma} 原型迭代完成高保真设计后方开始编码。
+            \item 定义完整系统架构（\textbf{React}、\textbf{Express.js}、\textbf{PostgreSQL}、\textbf{Redis}），
+            并以 Markdown 撰写详细接口规范，作为开发的唯一参考源。
+            \item 采用\textbf{测试驱动开发}，协调三个并行 \textbf{Claude Code} 智能体分别从规范生成测试、
+            实现后端接口、通过 \textbf{MCP} 从 Figma 设计搭建前端，
+            随后通过自动化（\textbf{Vitest}、\textbf{Playwright}）和手动端到端测试验证输出。
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{\href{https://github.com/DavidHua04/Minecraft-Player-Engagement-Analysis}{查看 GitHub}}
+        \textbf{UBC Minecraft 玩家参与度分析}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 利用玩家和会话数据分析 UBC 托管 Minecraft 服务器上的玩家行为，
+            识别贡献数据最多的玩家类型，为未来研究提供定向招募依据。
+            \item 工具：Python（NumPy、Pandas、Matplotlib、Seaborn、SciPy）
+        \end{highlights}
+    \end{onecolentry}
+
+    \section{其他经历}
+
+    \begin{twocolentry}{2026年1月 -- 4月}
+        \textbf{本科助教}，不列颠哥伦比亚大学，温哥华
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 与另外两名助教共同主持每周实验课，在课堂中协作讲解复杂编程概念并调试代码。
+            \item 在答疑时间提供可扩展的技术支持，针对常见问题创建可复用的解答模板。
+            \item 与教学团队协调，统一评分标准和作业评估流程，确保多个实验班级评价的一致性。
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.20 cm}
+
+    \begin{twocolentry}{2023年8月 -- 2024年7月}
+        \textbf{财务官}，香港中文大学（深圳）IEEE 学生分会，深圳
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item 为一个 200+ 成员的组织设计并实施财务追踪系统，优化报销工作流程并确保政策合规。
+            \item 主导跨部门合作，推动 IEEE 会员费报销自动化，
+            协调学生分会与理工学院之间的沟通，提高会员参与率。
+        \end{highlights}
+    \end{onecolentry}
+
+\end{document}

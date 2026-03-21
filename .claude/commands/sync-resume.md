@@ -1,0 +1,1 @@
+Update the @resume_CN\resume-zh_CN.tex based on the content of @resume_EN\resume.tex.

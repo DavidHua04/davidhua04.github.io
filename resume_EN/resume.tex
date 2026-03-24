@@ -115,7 +115,7 @@
 \let\hrefWithoutArrow\href
 
 \begin{document}
-    % \placefooterimage
+    \placefooterimage
     
     % Define separator:
     \newcommand{\AND}{\unskip
@@ -159,7 +159,7 @@
         
     \section{Education}
     
-    \begin{twocolentry}{August 2024 -- Present}
+    \begin{twocolentry}{August 2024 -- April, 2027}
         \textbf{University of British Columbia, Vancouver}, B.Sc in Computer Science
     \end{twocolentry}
 
@@ -168,22 +168,21 @@
         \begin{highlights}
             \item GPA: 4.33/4.33 (91.5/100)
             \item Honors: Faculty of Science International Student Scholarship, UBC Dean's Scholar
-            \item Expected Graduation Date: April, 2027
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.25 cm}
+    % \vspace{0.25 cm}
     
-    \begin{twocolentry}{June 2023 -- August 2024}
-        \textbf{Chinese University of Hong Kong, Shenzhen}, B.Eng in Computer Engineering
-    \end{twocolentry}
+    % \begin{twocolentry}{June 2023 -- August 2024}
+    %     \textbf{Chinese University of Hong Kong, Shenzhen}, B.Eng in Computer Engineering
+    % \end{twocolentry}
 
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item GPA: 3.7/4.0
-        \end{highlights}
-    \end{onecolentry}
+    % \vspace{0.10 cm}
+    % \begin{onecolentry}
+    %     \begin{highlights}
+    %         \item GPA: 3.7/4.0
+    %     \end{highlights}
+    % \end{onecolentry}
 
     \vspace{0.2 cm}
 
@@ -196,8 +195,8 @@
             \item \textbf{Testing:} JUnit, unittest, pytest, SuperTest, chai, vitest, playwright
             \item \textbf{Database:} MySQL, Oracle, PostgreSQL
             \item \textbf{Web Development:} RESTful services, Node.js, Express, React, Tailwind css, HTML, CSS, JavaScript/TypeScript
-            \item \textbf{Tools:} Docker, Git, Redis, Kubernotes, GitHub, Basic Linux Environments, CI/CD Pipelines, Tableau, Postman, LaTeX
-            \item \textbf{UI/UX Design:} Prototyping (Figma), Interview/Observation/Survey Design, Thematic Analysis, Usability Testing, Heuristic Evaluation
+            \item \textbf{Tools:} Docker, Git, Redis, Kubernotes, GitHub, Basic Linux Environments, CI/CD Pipelines, Tableau, Postman
+            \item \textbf{UI/UX Design:} Prototyping (Figma/Mastergo), Interview/Observation/Survey Design, Thematic Analysis, Usability Testing, Heuristic Evaluation
             \item \textbf{AI \& Machine Learning:} Classical ML models (KNN, Ridge, Random Forest, ensemble methods, etc), Recommendation System, Time Series, Model Evaluation \& Deployment
         \end{highlights}
     \end{onecolentry}
@@ -218,7 +217,7 @@
             \item Built a bilingual (English/Chinese) harmful-word dataset of 2,000+ unique terms 
             by merging and deduplicating four public toxic-word corpora 
             and one Chinese offensive-language dataset.
-            \item Developed a \textbf{Python image generation pipeline} that renders harmful words as ASCII art across 8 fill modes and 10 resolution scales.
+            \item Developed a \textbf{Python image generation pipeline} that renders harmful words as ASCII art across 8 fill modes.
             \item Evaluated 8 state-of-the-art \textbf{vision-language models} 
             (GPT-4o-mini, Gemini, Grok, LLaMA, Qwen, etc.) via the \textbf{OpenRouter API} on over \textbf{50,000 image samples}.
             \item Applied \textbf{logistic regression} for detection-failure threshold estimation 
@@ -264,11 +263,11 @@
             \item Developed and implemented a web crawler to automatically retrieve ESG reports from corporate websites, enhancing data acquisition efficiency.
             \item Converted PDF documents into text, increasing data accuracy and reliability.
             \item Employed OpenAI's api to extract critical information from text, streamlining the data processing workflow.
-            \item Created well-designed prompts, significantly reducing the incidence of hallucinated or inaccurate data by 4\%, bolstering the integrity of research outcomes.
+            \item Designed prompts that reduced hallucination rate by 4\%, strengthening research integrity.
         \end{highlights}
     \end{onecolentry}
 
-    \section{Projects}
+    \section{Technical Projects}
     
     % \begin{twocolentry}{\href{https://github.com/DavidHua04/ASCII-Art-Identifier}{View on GitHub}}
     %     \textbf{Identifier System to Enhance ASCII Art Recognition in LLMs}
@@ -286,76 +285,73 @@
 
     % \vspace{0.2 cm}
 
-    \begin{twocolentry} {}
+    \begin{twocolentry}{January -- April 2026}
         \textbf{InsightUBC — Course \& Facilities Data Explorer}
     \end{twocolentry}
     \vspace{0.10 cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Developed a frontend with 4 \textbf{Recharts} visualizations using \textbf{React 18/TypeScript} and \textbf{Tailwind css}, 
+            \item Built a full-stack web application enabling UBC Decision Support team to interactively 
+            query, filter, and visualize course and facilities data across departments and buildings.
+            \item Developed a frontend with 4 \textbf{Recharts} visualizations using \textbf{React 18/TypeScript} and \textbf{Tailwind css},
             enabling non-technical users to explore patterns across UBC departments and buildings.
-            \item Implemented server-side pagination and lazy-loading of nested section data, reducing initial page payload while maintaining full browsability across thousands of records.
-            \item Collaborated on a full-stack REST API (\textbf{Node.js/Express + TypeScript}) 
-            with a custom query DSL supporting filtering (AND/OR/NOT), aggregations (GROUP BY, AVG/SUM/COUNT), 
+            % \item Implemented server-side pagination and lazy-loading of nested section data, reducing initial page payload while maintaining full browsability across thousands of records.
+            \item Collaborated on a full-stack REST API (\textbf{Node.js/Express + TypeScript})
+            with a custom query DSL supporting filtering (AND/OR/NOT), aggregations (GROUP BY, AVG/SUM/COUNT),
             and async ZIP dataset ingestion, serving 20+ endpoints.
         \end{highlights}
     \end{onecolentry}
 
     \vspace{0.2 cm}
     
-    \begin{twocolentry}{\href{https://github.com/DavidHua04/CreditCardDefaultPost.github.io}{View on GitHub}}
-        \textbf{Credit Card Default Prediction}
+    \begin{twocolentry}{October -- November 2025}
+        \href{https://github.com/DavidHua04/CreditCardDefaultPost.github.io}{\textbf{Credit Card Default Prediction}}
     \end{twocolentry}
-    
+
     \vspace{0.10 cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Built and compared 7 classification models (Logistic Regression, Random Forest, XGBoost, LightGBM, etc.) 
+            \item Predicted credit card default risk on 30,000 records by training and comparing 7 classification models, identifying repayment delay as the dominant predictor via SHAP analysis.
+            \item Built and compared 7 classification models (Logistic Regression, Random Forest, XGBoost, LightGBM, etc.)
             on 30,000 credit card records to predict default risk.
             \item Engineered features from 6-month payment history and applied SHAP analysis to identify repayment delay as the dominant predictor.
-            \item Communicated model findings, SHAP feature-importance insights, and data-quality caveats in a plain-language report 
+            \item Communicated model findings, SHAP feature-importance insights, and data-quality caveats in a plain-language report
             designed for non-technical stakeholders, and deployed it as a static site via \href{https://davidhua04.github.io/CreditCardDefaultPost.github.io/}{\textbf{GitHub Pages} (Click to view)}.
         \end{highlights}
     \end{onecolentry}
     
     \vspace{0.2 cm}
 
-    \begin{twocolentry}{\href{https://github.com/DavidHua04/UBC-Courses-Visualization}{View on GitHub}}
-        \textbf{UBC Course Visual Planner}
+    \begin{twocolentry}{Dec 2024 -- March 2026}
+        \href{https://github.com/DavidHua04/UBC-Courses-Visualization}{\textbf{UBC Course Visual Planner}}
     \end{twocolentry}
-    
+
     \vspace{0.10 cm}
     \begin{onecolentry}
-        % \begin{highlights}
-        %     \item Developed a course-visualizing and planning tool utilizing \textbf{Test-Driven Development} using \textbf{Playwright} and \textbf{vitest}.
-        %     \item Ensured accessibility by deploying the tool across multiple platforms, including a dedicated website and a PC application.
-        %     \item Conducted usability testing to improve user experience
-        %     \item Tools Used: React, Tailwind.css, TypeScript, Express, HTML/CSS, Figma, Postman
-        % \end{highlights}
         \begin{highlights}
-            \item Conducted iterative user research through interviews and think-aloud observations, 
+            \item Designed and delivered a full-stack UBC course planning tool using \textbf{React}, \textbf{Express.js}, \textbf{PostgreSQL}, \textbf{Redis}
+            \item Conducted iterative user research through interviews and think-aloud observations,
             refining a \textbf{Figma} prototype across multiple cycles to reach a high-fidelity design before writing any code.
-            \item Defined the full system architecture (\textbf{React}, \textbf{Express.js}, \textbf{PostgreSQL}, \textbf{Redis}) 
-            and authored detailed endpoint specifications in Markdown, serving as the single source of truth for development.
-            \item Applied \textbf{Test Driven Development} by orchestrating three parallel \textbf{Claude Code} agents to generate tests from specs, 
-            implement backend endpoints, and scaffold frontend from Figma designs via \textbf{MCP}, 
+            \item Defined the full system architecture and authored detailed endpoint specifications in Markdown, serving as the source of truth for AI development.
+            \item Applied \textbf{Test Driven Development} by orchestrating three parallel \textbf{Claude Code} agents to generate tests from specs,
+            implement backend endpoints, and scaffold frontend from Figma designs via \textbf{MCP},
             then validated output through automated (\textbf{Vitest}, \textbf{Playwright}) and manual end-to-end testing.
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    % \vspace{0.2 cm}
 
-    \begin{twocolentry}{\href{https://github.com/DavidHua04/Minecraft-Player-Engagement-Analysis}{View on GitHub}}
-        \textbf{UBC Minecraft Player Engagement Analysis}
-    \end{twocolentry}
+    % \begin{twocolentry}{\href{https://github.com/DavidHua04/Minecraft-Player-Engagement-Analysis}{View on GitHub}}
+    %     \textbf{UBC Minecraft Player Engagement Analysis}
+    % \end{twocolentry}
     
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Analyzed player behavior on a UBC-hosted Minecraft server using player and session data to identify which types of players contribute the most data, aiding targeted recruitment for future research.
-            \item Tools Used: Python (NumPy, Pandas, Matplotlib, Seaborn, SciPy)
-        \end{highlights}
-    \end{onecolentry}
+    % \vspace{0.10 cm}
+    % \begin{onecolentry}
+    %     \begin{highlights}
+    %         \item Analyzed player behavior on a UBC-hosted Minecraft server using player and session data to identify which types of players contribute the most data, aiding targeted recruitment for future research.
+    %         \item Tools Used: Python (NumPy, Pandas, Matplotlib, Seaborn, SciPy)
+    %     \end{highlights}
+    % \end{onecolentry}
 
     \section{Other Experience}
     

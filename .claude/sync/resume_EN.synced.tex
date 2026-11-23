@@ -1,0 +1,391 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage{calc}
+\usepackage[
+    pdftitle={David Hua's CV},
+    pdfauthor={David Hua},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+\usepackage{graphicx}
+
+% Ensure that generated pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{XCharter}
+
+% Settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+% Section formatting:
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+
+% Custom bullet points:
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+% Custom environments:
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0 cm + 0.00001 cm}{0 cm + 0.00001 cm}
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+% Footer image command (simplified):
+\newcommand{\placefooterimage}{
+  \AddToShipoutPictureBG{
+    \AtPageLowerLeft{
+      \raisebox{0.1cm}{
+        \hspace{\dimexpr(\paperwidth-19cm)/2\relax}
+        \includegraphics[width=18cm]{MS Word Footer Logo 3 - png.png}
+      }
+    }
+  }
+}
+
+% Save original href:
+\let\hrefWithoutArrow\href
+
+\begin{document}
+    \placefooterimage
+    
+    % Define separator:
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    % Header:
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont David Hua
+
+        \vspace{5 pt}
+
+        \normalsize
+        \mbox{Vancouver, Canada}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:huayikai.david@gmail.com}{huayikai.david@gmail.com}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{tel:+01 6047670602}{+01 6047670602}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://davidhua04.github.io/index.html}{davidhua04.github.io}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/david-hua-428809320/}{linkedin.com/in/david-hua-428809320}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://github.com/DavidHua04}{github.com/DavidHua04}}%
+    \end{header}
+
+    \vspace{5 pt - 0.3 cm}
+        
+    \section{Education}
+    
+    \begin{twocolentry}{August 2024 -- Present}
+        \textbf{University of British Columbia, Vancouver}, B.Sc in Computer Science
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item GPA: 4.33/4.33 (91.3/100)
+            \item Honors: Charles and Jane Banks Scholarship, Faculty of Science International Student Scholarship, UBC Dean's Scholar
+        \end{highlights}
+    \end{onecolentry}
+
+    % \vspace{0.25 cm}
+    % \begin{twocolentry}{June 2023 -- August 2024}
+    %     \textbf{Chinese University of Hong Kong, Shenzhen}, B.Eng in Computer Engineering
+    % \end{twocolentry}
+    % \vspace{0.10 cm}
+    % \begin{onecolentry}
+    %     \begin{highlights}
+    %         \item GPA: 3.7/4.0
+    %     \end{highlights}
+    % \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \section{Technical Skills}
+    
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Programming Languages:} Python, Java, Scala, C, C++, Go, JavaScript/TypeScript, SQL, R
+            \item \textbf{Testing:} JUnit, unittest, pytest, SuperTest, chai, vitest, playwright
+            \item \textbf{Database:} MySQL, Oracle, PostgreSQL
+            \item \textbf{Web Development:} RESTful services, Node.js, Express, React, Angular, Less, Tailwind css, HTML, CSS, JavaScript/TypeScript
+            \item \textbf{Tools:} Docker, Git, GitHub, Linux Environments, CI/CD Pipelines, Tableau, Postman
+            \item \textbf{AI \& Machine Learning:} RAG, Scikit-learn, TensorFlow, PyTorch, 
+            Classical ML models (KNN, Ridge, Random Forest, ensemble methods, etc), Recommendation System, 
+            Time Series, Model Evaluation \& Deployment
+            \item \textbf{GPU \& Parallel Computing:} Basic CUDA
+            % \item \textbf{UI/UX Design:} Prototyping (Figma/Mastergo), Interview/Observation/Survey Design, Thematic Analysis, Usability Testing, Heuristic Evaluation
+        \end{highlights}
+    \end{onecolentry}
+    
+    \vspace{0.05 cm}
+
+    \section{Technical Experience}
+
+    \vspace{0.20 cm}
+    
+    \begin{twocolentry}{September 2026 -- April 2027}
+        \textbf{Software Engineer Intern}, Visier, Vancouver
+    \end{twocolentry}
+    
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Contributed to the backend services behind interactive dashboards, data visualizations 
+            and scheduled report delivery in the enterprise people-analytics product,
+            using \textbf{Scala}, \textbf{TypeScript}, \textbf{Angular}, \textbf{RxJS}, \textbf{NgRx} and \textbf{Less}.
+            \item Prototyped a feature that enable Visier's AI agent to generate reports from natural language requests.
+            \item Enabled multi-language support for customers in other countries, extending the product's localization coverage.
+            \item Maintained the team's daily workflow tools and built new team-specific shell tools to enhance the team's production, 
+            including a smart branch-switcher and a ticket-start automation.
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.20 cm}
+
+    \begin{twocolentry}{January -- May 2026}
+        \textbf{Undergraduate Research Assistant}, University of British Columbia, Vancouver
+    \end{twocolentry}
+    
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a bilingual (English/Chinese) harmful-word dataset of 2,000+ unique terms 
+            by merging and deduplicating four public toxic-word corpora 
+            and one Chinese offensive-language dataset.
+            \item Developed a \textbf{Python image generation pipeline} that renders harmful words as ASCII art across 8 fill modes.
+            \item Evaluated 8 state-of-the-art \textbf{vision-language models} 
+            (GPT-4o-mini, Gemini, Grok, LLaMA, Qwen, etc.) via the \textbf{OpenRouter API} on over \textbf{50,000 image samples}.
+            \item Applied \textbf{logistic regression} for detection-failure threshold estimation 
+            and \textbf{Cochran-Armitage trend tests} for monotonic detection decay across resolution scales.
+            % \item Conducted cross-language analysis using \textbf{chi-square and Fisher's exact tests}, 
+            % and modeled provider-origin effects with \textbf{mixed-effects logistic regression}.
+            \item Demonstrated that semantically neutral fill characters systematically evade VLM safety filters, 
+            with detection rates dropping below \textbf{15\%} at scale $r \leq 0.3$ and $r \geq 0.6$ across \textbf{6 of 8 models},
+            exposing a concrete vulnerability in current \textbf{AI content moderation} systems.
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.20 cm}
+
+    \begin{twocolentry}{May -- July 2025}
+        \textbf{Quality Assurance Intern}, GHz Technology Ltd., Shanghai
+    \end{twocolentry}
+    
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Supported UI design iteration in early stage of internship 
+            by adapting layouts based on evolving client requirements using \textbf{Figma}.
+            \item Conducted independent end-to-end testing of a hospital mobile application 
+            utilizing \textbf{Agile} methodology.
+            \item Designed and maintained 100+ structured test cases; 
+            identified 21 bugs and 4 usability issues, including 4 missed by the internal QA engineer.
+            \item Collaborated with QA Engineers and developers to triage, report, 
+            and verify fixes using internal tracking tools.
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.20 cm}
+    
+    \begin{twocolentry}{January -- July 2024}
+        \textbf{Undergraduate Research Assistant}, CUHK(SZ), Shenzhen
+    \end{twocolentry}
+    
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Developed and implemented a web crawler to automatically retrieve ESG reports from corporate websites, enhancing data acquisition efficiency.
+            \item Converted PDF documents into text, increasing data accuracy and reliability.
+            \item Employed OpenAI's api to extract critical information from text, streamlining the data processing workflow.
+            \item Designed prompts that reduced hallucination rate by 4\%, strengthening research integrity.
+        \end{highlights}
+    \end{onecolentry}
+
+    \section{Technical Projects}
+    
+    % \begin{twocolentry}{\href{https://github.com/DavidHua04/ASCII-Art-Identifier}{View on GitHub}}
+    %     \textbf{Identifier System to Enhance ASCII Art Recognition in LLMs}
+    % \end{twocolentry}
+    
+    % \vspace{0.10 cm}
+    % \begin{onecolentry}
+    %     \begin{highlights}
+    %         \item Designed a lightweight content-moderation tool integrating LLM and VLM models to detect offensive ASCII art.
+    %         \item Improved recognition accuracy from 12\% to 81\% and reduced hallucination from 88\% to 14\% through image-based rerouting.
+    %         \item Implemented reproducible experiments and statistical validation (t-test, bootstrap) in Python.
+    %         \item Tools Used: Python, OpenRouter
+    %     \end{highlights}
+    % \end{onecolentry}
+
+    % \vspace{0.2 cm}
+
+    \begin{twocolentry}{Dec 2024 -- June 2026}
+        \href{https://github.com/DavidHua04/UBC-Courses-Visualization}{\textbf{UBC Course Visual Planner}}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Designed and delivered a full-stack UBC course planning tool using \textbf{React}, \textbf{Express.js}, \textbf{PostgreSQL}, \textbf{Redis}
+            \item Conducted iterative user research through interviews and think-aloud observations,
+            refining a \textbf{Figma} prototype across multiple cycles to reach a high-fidelity design before writing any code.
+            \item Defined the full system architecture and authored detailed endpoint specifications in Markdown, serving as the source of truth for AI development.
+            \item Applied \textbf{Test Driven Development} by orchestrating three parallel \textbf{Claude Code} agents to generate tests from specs,
+            implement backend endpoints, and scaffold frontend from Figma designs via \textbf{MCP},
+            then validated output through automated (\textbf{Vitest}, \textbf{Playwright}) and manual end-to-end testing.
+        \end{highlights}
+    \end{onecolentry}
+    
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{January -- April 2026}
+        \textbf{InsightUBC — Course \& Facilities Data Explorer}
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a full-stack web application enabling UBC Decision Support team to interactively 
+            query, filter, and visualize course and facilities data across departments and buildings.
+            \item Developed a frontend with 4 \textbf{Recharts} visualizations using \textbf{React 18/TypeScript} and \textbf{Tailwind css},
+            enabling non-technical users to explore patterns across UBC departments and buildings.
+            % \item Implemented server-side pagination and lazy-loading of nested section data, reducing initial page payload while maintaining full browsability across thousands of records.
+            \item Collaborated on a full-stack REST API (\textbf{Node.js/Express + TypeScript})
+            with a custom query DSL supporting filtering (AND/OR/NOT), aggregations (GROUP BY, AVG/SUM/COUNT),
+            and async ZIP dataset ingestion, serving 20+ endpoints.
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+    
+    \begin{twocolentry}{October -- November 2025}
+        \href{https://github.com/DavidHua04/CreditCardDefaultPost.github.io}{\textbf{Credit Card Default Prediction}}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built and compared 7 classification models (Logistic Regression, Random Forest, XGBoost, LightGBM, etc.)
+            on 30,000 credit card records to predict default risk.
+            \item Engineered features from 6-month payment history and applied SHAP analysis to identify repayment delay as the dominant predictor.
+            \item Communicated model findings, SHAP feature-importance insights, and data-quality caveats in a plain-language report
+            designed for non-technical stakeholders, and deployed it as a static site via \href{https://davidhua04.github.io/CreditCardDefaultPost.github.io/}{\textbf{GitHub Pages} (Click to view)}.
+        \end{highlights}
+    \end{onecolentry}
+
+    \section{Other Experience}
+    
+    \begin{twocolentry}{January -- July 2026}
+        \textbf{Undergraduate Teaching Assistant}, University of British Columbia, Vancouver
+    \end{twocolentry}
+    
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a Python script that auto-generates json configurations for 50 PrairieLearn assessments, eliminating manual per-question repo edits during the Canvas-to-PrairieLearn migration.
+            \item Contributed to the course PrairieLearn repository via git/GitHub, authoring questions, fixing rendering issues, maintaining lecture participation modules.
+            \item Led weekly lab sessions with two other TAs, breaking down complex programming concepts and debugging code collaboratively in lab sessions.
+            \item Provided scalable technical support during office hour, creating reusable explanations for common challenges.
+            \item Coordinated with teaching team to standardize rubrics and assessment workflows, ensuring consistent evaluation across multiple lab sections.
+        \end{highlights}
+    \end{onecolentry}
+    
+    % \vspace{0.20 cm}
+    
+    % \begin{twocolentry}{August 2023 -- July 2024}
+    %     \textbf{Finance Officer}, CUHK(SZ) IEEE Student Branch, Shenzhen
+    % \end{twocolentry}
+    
+    % \vspace{0.10 cm}
+    % \begin{onecolentry}
+    %     \begin{highlights}
+    %         \item Designed and implemented a financial tracking system for a 200+ member organization, streamlining reimbursement workflows and ensuring policy compliance.
+    %         \item Led cross-departmental initiative to automate IEEE membership fee reimbursements, coordinating between student branch and School of Science and Engineering to increase membership participation.
+    %     \end{highlights}
+    % \end{onecolentry}
+    
+\end{document}
